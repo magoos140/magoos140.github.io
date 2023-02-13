@@ -111,6 +111,33 @@ body{
     display: var(--show, none);
 }
 
+/* Nav Productos  */
+.nav__productos{
+    display: inline-block;
+    padding-top: 25px;
+}
+.productos__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+.productos__sections{
+    list-style: none;
+}
+
+.sections__links{
+    display: inline-block;
+    background-color: #bb20f9;
+    justify-self: center;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 32px;
+    text-decoration: none;
+}
+
 /* Hero container */
 
 .hero__container{
@@ -152,6 +179,7 @@ body{
 .about__productos{
     text-align: center;
     margin-top: 0;
+    padding: 50px;
 }
 
 .subtitle{
@@ -203,8 +231,8 @@ body{
 .knowledge__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8em;
     align-items: center;
+    padding-left: 50px
 }
 
 .knowledge__picture{
@@ -217,20 +245,22 @@ body{
 }
 
 .knowledge__img{
-    width: 100%;
+    width: 65%;
     display: block;
+    border-radius: 50%;
+    margin: 0 auto;
 }
 
 
 .cta__knowledge{
-    display: flex;
+    display: block;
     background-color: #bb20f9;
-    justify-self: center;
     color: #fff;
     padding: 13px 30px;
     border-radius: 32px;
     text-decoration: none;
-    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
 }
 /*shop*/
 
@@ -251,7 +281,7 @@ body{
 }
 
 .price__table{
-    padding-top: 60px;
+    padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5em;
@@ -263,7 +293,7 @@ body{
     background-color: #e5e5f7;
     text-align: center;
     border-radius: 10px;
-    width: 300px;
+    width: 312px;
     padding: 30px;
     --color-plan: #696871;
     --color-price: #1D293F;
@@ -301,7 +331,8 @@ body{
 .price__img{
     width: 100%;
     display: block;
-    border-radius: 3px;
+    border-radius: 8px;
+    height: 220px;
 }
 
 .price__items{
@@ -423,6 +454,10 @@ body{
 .testimony__arrow{
     width: 90%;
     cursor: pointer;
+}
+
+.testimony__review{
+    text-align: center;
 }
 
 /* Questions */
@@ -808,6 +843,11 @@ hr{
         margin: 0;
     }
 
+    .productos__link{
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer__form{
         width: 100%;
         justify-content: space-evenly;
@@ -903,11 +943,14 @@ hr{
         margin-right: auto;
         margin-left: 0;
         
-
         /* 
         margin:0;
         width: 100%;
         */
+    }
+
+    .modal__close{
+        margin-left: 80%;
     }
 }
 
