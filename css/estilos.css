@@ -799,6 +799,7 @@ hr{
         grid-template-rows: max-content 1fr;
         gap: 3em;
         text-align: center;
+        padding-left:0 ;
     }
 
     .knowledge__picture{
