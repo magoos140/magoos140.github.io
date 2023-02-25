@@ -603,6 +603,10 @@ body{
     color: #e1c2e1;
 }
 
+.modal__submit:hover{
+    width: 80px;
+}
+
 .modal__social{
     margin: 10px 0;
 }
